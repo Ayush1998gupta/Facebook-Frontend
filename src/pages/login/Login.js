@@ -67,7 +67,7 @@ const Login = () => {
                 )}
               </Formik>
               <Link to="/forgot" className="forgot_password">
-                Forgotten password ?
+                Forgotten password?
               </Link>
               <div className="sign_splitter"></div>
               <button className="blue_btn open_signup">
