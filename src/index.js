@@ -4,10 +4,17 @@ import './index.css';
 import './styles/icons/icons.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { Provider } from 'react-redux';
+import rootReducre from './reducers';
+const store = createStore(rootReducre, composeWithDevTools());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>
 );
