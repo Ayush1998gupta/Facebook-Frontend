@@ -4,7 +4,7 @@
 }
 
 .login_wrap {
-  height: 100vh;
+  height: 78vh;
   color: var(--color-primary);
 }
 .login_1 {
@@ -72,9 +72,9 @@
   background: var(--bg-primary);
   box-shadow: 0 1px 2px var(--shadow-1);
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px;
   padding-bottom: 1rem;
-  width: 400px;
+  width: 350px;
   height: fit-content;
   color: var(--color-primary);
 }
@@ -215,10 +215,35 @@
 }
 /*----Footer------*/
 
+/*----dob and gender errors-----*/
+.reg_grid .input_error {
+  width: 300px;
+  position: absolute;
+  top: 70px;
+}
+.input_error_select_large {
+  left: -97%;
+  top: 15px !important;
+}
+/*----dob and gender errors-----*/
+
 /*----Media queries--------------*/
 @media (min-width: 539px) {
   .login_footer_wrap {
     max-width: 520px;
+  }
+  .register {
+    width: 400px;
+  }
+  .reg_line {
+    flex-direction: row;
+  }
+  .reg_grid select,
+  .reg_grid label {
+    width: 110px;
+  }
+  .reg_grid .input_error {
+    width: 350px;
   }
 }
 @media (min-width: 650px) {
